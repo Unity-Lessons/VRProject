@@ -357,6 +357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 406939721}
+  - component: {fileID: 406939722}
   m_Layer: 0
   m_Name: Boundaries
   m_TagString: Untagged
@@ -370,8 +371,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 406939720}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3555636, y: -2.5270934, z: 2.1236424}
+  m_LocalRotation: {x: -0.30070576, y: -0, z: -0, w: 0.953717}
+  m_LocalPosition: {x: 1.3555636, y: -1.4238806, z: 14.57647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1005492321}
@@ -379,9 +380,23 @@ Transform:
   - {fileID: 179662892}
   - {fileID: 527061313}
   - {fileID: 476842193}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 607264254}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406939722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406939720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74782b841a89cc241a816da10b43e055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiltSpeed: 5
+  tiltAngle: 120
+  rotationAmount: 20
 --- !u!1 &476842189
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +567,11 @@ Transform:
   m_Father: {fileID: 406939721}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!4 &607264254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1042695188}
 --- !u!1 &687405203
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &743555391
 Rigidbody:
@@ -842,6 +862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74782b841a89cc241a816da10b43e055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tiltSpeed: 0
+  tiltAngle: 120
+  rotationAmount: 20
 --- !u!1001 &1042695188
 Prefab:
   m_ObjectHideFlags: 0
