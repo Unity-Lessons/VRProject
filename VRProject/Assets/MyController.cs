@@ -11,10 +11,6 @@ public class MyController : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        Vector3 position = transform.position;      // this transform
-        position.x += moveHorizontal * speed * Time.deltaTime;
-        position.z += moveVertical * speed * Time.deltaTime;
-        transform.position = position;
     }
 
 }
