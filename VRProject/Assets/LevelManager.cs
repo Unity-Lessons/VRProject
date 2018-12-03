@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Ball")
+        if (other.gameObject.name == "Ball(Clone)")
         {
             Debug.Log("Touched the butt");
             transport.Play();
